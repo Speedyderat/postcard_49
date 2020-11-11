@@ -8,27 +8,22 @@
  */
 
 String[] words;
-int index=0;
-float x=10;
-String sentence;
+String[] lines;
+float xPos;
+float yPos;
+Words word;
 
-
-
-void setup() {
-  size(600, 400);
-
-  String[] message = loadStrings("text.txt") ;
-  sentence = join(message, " "); 
-  println(sentence);
-  words = split(sentence, " ");
-  frameRate(7);
+void setup(){
+size(600,800);
+scaler = 1;
+xPos = width/2;
+yPos = height/2;
+lines = loadStrings("text.txt");
+entiretxt = join(lines, " ");
+word = new Words(scaler,xPos,yPos,entiretxt);
 }
 
-void draw() {
-}
-if(count >= words.length ){
- count = 0; 
-}
-
-frame++;
+void draw(){
+background(0,255,0);
+word.display();
 }
