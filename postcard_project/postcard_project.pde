@@ -2,9 +2,9 @@
 /* 
  PPC project - animated post card
  Made by: 
- Jasper Bosschart (s2562685)
- student name      (student no.)  
- Felipe Ramires    (s2486512) 
+ Jasper Bosschart  (s2562685)
+ Dennis Bitoiu     (s2491494)  
+ student name      (student no.) 
  Hans Nielen      (s2336693) 
  */
 
