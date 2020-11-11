@@ -1,4 +1,3 @@
-
 /* 
  PPC project - animated post card
  Made by: 
@@ -8,32 +7,24 @@
  Hans Nielen      (s2336693) 
  */
 
-float scaler;
-String entiretxt;
 String[] words;
-String[] lines;
-int count;
-int frame;
+int index=0;
+float x=10;
+String sentence;
 
-void setup(){
-scaler = 1;
-size(600,800);
-lines = loadStrings("text.txt");
-entiretxt = join(lines, " ");
-words = split(entiretxt, " ");
-count = 0;
-frame = 0;
+
+
+void setup() {
+  size(600, 400);
+
+  String[] message = loadStrings("text.txt") ;
+  sentence = join(message, " "); 
+  println(sentence);
+  words = split(sentence, " ");
+  frameRate(7);
 }
 
-void draw(){
-background(0,255,0);
-println(entiretxt);
-textSize(100);
-text(words[count], 100, 100);
-if (count < words.length - 1 && frame%10==0 && frame != 0){
-count++;
-} else if(count >= words.length ){
-  
+void draw() {
 }
 if(count >= words.length ){
  count = 0; 
