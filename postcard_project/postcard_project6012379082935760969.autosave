@@ -14,21 +14,30 @@ String[] words;
 String[] lines;
 int count;
 int frame;
-float xPos;
-float yPos;
-Words word;
 
 void setup(){
-size(600,800);
 scaler = 1;
-xPos = width/2;
-yPos = height/2;
+size(600,800);
 lines = loadStrings("text.txt");
 entiretxt = join(lines, " ");
-word = new Words(scaler,xPos,yPos,entiretxt);
+words = split(entiretxt, " ");
+count = 0;
+frame = 0;
 }
 
 void draw(){
 background(0,255,0);
-word.display();
+//println(entiretxt);
+textSize(100);
+text(words[count], 100, 100);
+if (count < words.length  && frame%10==0 && frame != 0){
+count++;
+} else if(count >= words.length ){
+  
+}
+if(count >= words.length ){
+ count = 0; 
+}
+
+frame++;
 }
