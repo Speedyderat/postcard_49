@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-Hello
-I am Dennis
-
-
-
-
-
-
-
-wabalabadudub
-=======
 /* 
  PPC project - animated post card
  Made by: 
@@ -24,4 +12,3 @@ void setup() {
 
 void draw() {
 }
->>>>>>> main
