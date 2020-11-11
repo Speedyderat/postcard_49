@@ -27,10 +27,10 @@ frame = 0;
 
 void draw(){
 background(0,255,0);
-println(entiretxt);
+//println(entiretxt);
 textSize(100);
 text(words[count], 100, 100);
-if (count < words.length - 1 && frame%10==0 && frame != 0){
+if (count < words.length  && frame%40==0 && frame != 0){
 count++;
 } else if(count >= words.length ){
   
