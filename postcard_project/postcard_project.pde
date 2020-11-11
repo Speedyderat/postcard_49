@@ -29,6 +29,5 @@ void setup() {
 
 void draw() {
   background(0, 255, 0);
-  textFont(font.randomFont());
   word.display();
 }

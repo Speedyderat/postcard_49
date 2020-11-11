@@ -1,7 +1,7 @@
 class Font {
 
   PFont[] font = new PFont[23];
-  
+
   int R22;
 
   Font() {
@@ -28,11 +28,10 @@ class Font {
     font[20] = createFont("font (21).ttf", 20);
     font[21] = createFont("font (22).ttf", 20);
     font[22] = createFont("font (23).ttf", 20);
-    R22 = int(random(0,22));
   }
-  
+
   PFont randomFont() {
+    R22 = int(random(0, 22));
     return font[R22];
   }
-  
 }

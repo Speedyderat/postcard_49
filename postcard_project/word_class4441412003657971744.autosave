@@ -24,17 +24,25 @@ class Words {
   }
 
   void display() {
+    textSize(scalor);
     textAlign(CENTER);
     for(int i=0; i<count; i++){
-    textFont(font.randomFont());
-    textSize(scalor);
     text(words[i], posX, posY);
     posY += (scalor);
     }
-    if (count < words.length  && frame%40==0 && frame != 0) {
+    posY = (scalor);
+    if (count < words.length && frame%40==0 && frame != 0) {
       count++;
+//    } else if (count == words.length ) {
+//    for(int i=0; i<count; i++){
+//      text(words[i], posX, posY);
+    posY += (scalor);
+    }  
+//    }
+    if (count >= words.length ) {
+      //count = 0;
     }
-    posY = (scalor);    
+
     frame++;
   }
 }
