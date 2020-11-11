@@ -9,8 +9,10 @@
 
 String[] words;
 String[] lines;
+String entiretxt;
 float xPos;
 float yPos;
+float scaler;
 Words word;
 
 void setup(){
