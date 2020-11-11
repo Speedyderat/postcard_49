@@ -12,8 +12,6 @@ float scaler;
 String entiretxt;
 String[] words;
 String[] lines;
-int count;
-int frame;
 float xPos;
 float yPos;
 Words word;
