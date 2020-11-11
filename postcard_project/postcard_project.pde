@@ -13,19 +13,22 @@ String entiretxt;
 float xPos;
 float yPos;
 float scaler;
+Font font;
 Words word;
 
-void setup(){
-size(600,800);
-scaler = 1;
-xPos = width/2;
-yPos = height/2;
-lines = loadStrings("text.txt");
-entiretxt = join(lines, " ");
-word = new Words(scaler,xPos,yPos,entiretxt);
+void setup() {
+  size(600, 800);
+  scaler = 1;
+  xPos = width/2;
+  yPos = height/2;
+  lines = loadStrings("text.txt");
+  entiretxt = join(lines, " ");
+  font = new Font();
+  word = new Words(scaler, xPos, yPos, entiretxt);
 }
 
-void draw(){
-background(0,255,0);
-word.display();
+void draw() {
+  background(0, 255, 0);
+  textFont(font.randomFont());
+  word.display();
 }
