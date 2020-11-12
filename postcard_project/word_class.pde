@@ -35,7 +35,6 @@ class Words {
     }
     if (count < words.length  && frame%40==0 && frame != 0) {
       count++;
-      //textFont(font.randomFont());
     }
     posY = (scalor);    
     frame++;
