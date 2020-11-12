@@ -6,15 +6,15 @@ class Background {
 
   PImage[] background = new PImage[13];
 
-  int R11;
+  int R12;
 
   Background() {
-    R11 = int(random(1, 12));
-    background[R11] = loadImage("background/background ("+ R11 +").jpg");
+    R12 = int(random(1, 12));
+    background[R12] = loadImage("background/background ("+ R12 +").jpg");
   }
 
   void display() {
-    image(background[R11], 0, 0);
-    background[R11].resize(600, 800);
+    image(background[R12], 0, 0);
+    background[R12].resize(600, 800);
   }
 }
