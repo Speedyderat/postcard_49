@@ -1,5 +1,5 @@
 /* 
- class for the backgrounds, backgrounds have been downloaded from google backgrounds and fall under OFL.
+ class for the backgrounds, backgrounds have been downloaded from unsplash and are free to use.
  */
 
 class Background {

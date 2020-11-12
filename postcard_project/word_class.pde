@@ -1,5 +1,5 @@
 /* 
- class for the letters
+ class for the words
  */
 
 class Words {

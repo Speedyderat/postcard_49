@@ -1,3 +1,7 @@
+/* 
+ class for the fonts, fonts have been downloaded from google fonts and fall under OFL.
+ */
+ 
 class Font {
 
   PFont[] font = new PFont[23];
