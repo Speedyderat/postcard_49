@@ -11,7 +11,7 @@ class Words {
   float posY;
   boolean stop;
   float scalor;
-  String[] fontPerWord;
+  PFont[] fontPerWord = new PFont[23]; 
 
   Words(float scale, float tempposX, float tempposY, String entiretxt) {
     posX = tempposX;
@@ -21,20 +21,22 @@ class Words {
     frame = 0;
     scalor = height/(words.length+1);
     textSize(scalor);
-    stop = false;
+    for(int b=0;b<22;b++){       
+    fontPerWord[b]=font.randomFont(); 
+    } 
   }
 
   void display() {
     textAlign(CENTER);
     for(int i=0; i<count; i++){
-
+    textFont(fontPerWord[i]); 
     textSize(scalor);
     text(words[i], posX, posY);
     posY += (scalor);
     }
     if (count < words.length  && frame%40==0 && frame != 0) {
       count++;
-      textFont(font.randomFont());
+      //textFont(font.randomFont());
     }
     posY = (scalor);    
     frame++;
