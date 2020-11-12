@@ -4,12 +4,12 @@
 
 class Background {
 
-  PImage[] background = new PImage[12];
+  PImage[] background = new PImage[13];
 
   int R11;
 
   Background() {
-    R11 = int(random(0, 11));
+    R11 = int(random(1, 12));
     background[R11] = loadImage("background/background ("+ R11 +").jpg");
   }
 
