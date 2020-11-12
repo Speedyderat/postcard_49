@@ -28,7 +28,7 @@ class Words {
   }
 
   void display() {
-    textAlign(CENTER);
+    textAlign(RIGHT);
     for (int i=0; i<count; i++) {
       textFont(fontPerWord[i]); 
       textSize(scalor);
