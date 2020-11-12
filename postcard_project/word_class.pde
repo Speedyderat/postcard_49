@@ -9,7 +9,6 @@ class Words {
   String[] words;
   float posX;
   float posY;
-  boolean stop;
   float scalor;
   PFont[] fontPerWord = new PFont[23]; 
 
