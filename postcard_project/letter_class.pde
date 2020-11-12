@@ -1,7 +1,6 @@
 /* 
  class for the letters
  */
- 
- class Letters {
-  
+
+class Letters {
 }

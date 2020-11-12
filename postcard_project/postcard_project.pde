@@ -13,6 +13,7 @@ String entiretxt;
 float xPos;
 float yPos;
 float scaler;
+Background background;
 Font font;
 Words word;
 
@@ -23,11 +24,12 @@ void setup() {
   yPos = height/2;
   lines = loadStrings("text.txt");
   entiretxt = join(lines, " ");
+  background = new Background();
   font = new Font();
   word = new Words(scaler, xPos, yPos, entiretxt);
 }
 
 void draw() {
-  background(0, 255, 0);
+  background.display();
   word.display();
 }
