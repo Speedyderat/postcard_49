@@ -13,6 +13,7 @@ String entiretxt;
 float xPos;
 float yPos;
 float scaler;
+boolean still;
 Background background;
 Font font;
 Words word;
@@ -22,6 +23,7 @@ void setup() {
   scaler = 1;
   xPos = width/2;
   yPos = height/2;
+  still = false;
   lines = loadStrings("text.txt");
   entiretxt = join(lines, " ");
   background = new Background();
@@ -31,5 +33,12 @@ void setup() {
 
 void draw() {
   background.display();
-  word.display();
+  word.display(still);
+}
+
+void mousePressed(){
+  still = true;
+}
+void mouseReleased(){
+  still = false;
 }

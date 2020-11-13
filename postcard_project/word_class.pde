@@ -27,12 +27,12 @@ class Words {
     }
   }
 
-  void display() {
+  void display(boolean still) {
     textAlign(RIGHT);
     for (int i=0; i<count; i++) {
       textFont(fontPerWord[i]); 
       textSize(scalor);
-      letter.display(words[i], posX, posY);
+      letter.display(words[i], posX, posY, still);
       //text(words[i], posX, posY);
       posY += (scalor);
     }
