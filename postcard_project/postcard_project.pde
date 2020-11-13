@@ -8,7 +8,7 @@
  Hans Nielen      (s2336693) 
  */
 
-String[] words;
+String[] words; // declaring classes and arrays
 String[] lines;
 String entiretxt;
 float xPos;
@@ -19,7 +19,7 @@ Background background;
 Font font;
 Words word;
 
-void setup() {
+void setup() { // assigning values to variables and parameters to classes
   size(600, 800);
   scaler = 1;
   xPos = width/2;
@@ -32,14 +32,14 @@ void setup() {
   word = new Words(scaler, xPos, yPos, entiretxt);
 }
 
-void draw() {
+void draw() { // displaying the background and words
   background.display();
   word.display(still);
 }
 
-void mousePressed(){
+void mousePressed(){ // method for words to stop shaking
   still = true;
 }
-void mouseReleased(){
+void mouseReleased(){ // words shake again
   still = false;
 }

@@ -3,18 +3,18 @@
  class for the letters
  */
 
-class Letters {
+class Letters { // variables for the letters
   int lengt;
   float widt;
   float tempX;
   char[] characters = new char[30];
   
-  Letters(){
+  Letters(){ // constrcutor for Letters
   lengt = 0;
   widt = 0;
   }
   
-  void display(String word, float posX, float posY, boolean still){
+  void display(String word, float posX, float posY, boolean still){ 
     lengt = word.length();
     widt = textWidth(word);
     posX = posX-(widt/2);

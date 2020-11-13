@@ -3,7 +3,7 @@
  class for the words
  */
 
-class Words {
+class Words { // variables for words and the Font array
 
   int count;
   int frame;
@@ -13,8 +13,8 @@ class Words {
   float scalor;
   PFont[] fontPerWord = new PFont[23];
   Letters letter;
-
-  Words(float scale, float tempposX, float tempposY, String entiretxt) {
+// words constructor
+  Words(float scale, float tempposX, float tempposY, String entiretxt) { 
     posX = tempposX;
     posY = tempposY;
     words = split(entiretxt, " ");
@@ -28,7 +28,7 @@ class Words {
     }
   }
 
-  void display(boolean still) {
+  void display(boolean still) { // displaying the words and calling letters display
     textAlign(RIGHT);
     for (int i=0; i<count; i++) {
       textFont(fontPerWord[i]); 
