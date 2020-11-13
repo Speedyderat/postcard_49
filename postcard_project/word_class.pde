@@ -2,7 +2,7 @@
  class for the words
  */
 
-class Words {
+class Words { // constructor for the words
 
   int count;
   int frame;
