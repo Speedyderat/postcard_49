@@ -16,6 +16,7 @@ float scaler;
 Background background;
 Font font;
 Words word;
+Letters letter;
 
 void setup() {
   size(600, 800);
@@ -27,9 +28,11 @@ void setup() {
   background = new Background();
   font = new Font();
   word = new Words(scaler, xPos, yPos, entiretxt);
+     
 }
 
 void draw() {
   background.display();
   word.display();
+
 }

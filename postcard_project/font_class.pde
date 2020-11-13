@@ -2,7 +2,7 @@
  class for the fonts, fonts have been downloaded from google fonts and fall under OFL.
  */
  
-class Font {
+class Font { // font constructor
 
   PFont[] font = new PFont[23];
 
@@ -34,7 +34,7 @@ class Font {
     font[22] = createFont("font/font (23).ttf", 20);
   }
 
-  PFont randomFont() {
+  PFont randomFont() { // random font method
     R22 = int(random(0, 22));
     return font[R22];
   }
