@@ -8,28 +8,19 @@
  Hans Nielen      (s2336693) 
  */
 
-String[] words; // declaring classes and arrays
-String[] lines;
-String entiretxt;
-float xPos;
+float xPos; // declaring classes and arrays
 float yPos;
-float scaler;
 boolean still;
 Background background;
-Font font;
 Words word;
 
 void setup() { // assigning values to variables and parameters to classes
   size(600, 800);
-  scaler = 1;
   xPos = width/2;
   yPos = height/2;
   still = false;
-  lines = loadStrings("text.txt");
-  entiretxt = join(lines, " ");
   background = new Background();
-  font = new Font();
-  word = new Words(scaler, xPos, yPos, entiretxt);
+  word = new Words(xPos, yPos);
 }
 
 void draw() { // displaying the background and words

@@ -4,7 +4,8 @@
  */
 
 class Words { // variables for words and the Font array
-
+  String entiretxt;
+  String[] lines; 
   int count;
   int frame;
   String[] words;
@@ -13,10 +14,14 @@ class Words { // variables for words and the Font array
   float scalor;
   PFont[] fontPerWord = new PFont[23];
   Letters letter;
+  Font font;
 // words constructor
-  Words(float scale, float tempposX, float tempposY, String entiretxt) { 
+  Words(float tempposX, float tempposY) { 
+    font = new Font();
     posX = tempposX;
     posY = tempposY;
+    lines = loadStrings("text.txt");
+    entiretxt = join(lines, " ");
     words = split(entiretxt, " ");
     count = 0;
     frame = 0;
