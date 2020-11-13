@@ -7,7 +7,7 @@
  Hans Nielen      (s2336693) 
  */
 
-String[] words;
+String[] words; // declaring classes and arrays
 String[] lines;
 String entiretxt;
 float xPos;
@@ -31,7 +31,7 @@ void setup() {
      
 }
 
-void draw() {
+void draw() { // displaying the background and words
   background.display();
   word.display();
 
