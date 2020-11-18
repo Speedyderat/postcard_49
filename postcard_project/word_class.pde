@@ -15,6 +15,8 @@ class Words { // variables for words and the Font array
   PFont[] fontPerWord = new PFont[23];
   Letters letter;
   Font font;
+Color color1;
+  
 // words constructor
   Words(float tempposX, float tempposY) { 
     font = new Font();
@@ -30,10 +32,12 @@ class Words { // variables for words and the Font array
     textSize(scalor);
     for (int b=0; b<22; b++) {       
       fontPerWord[b]=font.randomFont();
+        color1 = new Color();
     }
   }
 
   void display(boolean still) { // displaying the words and calling letters display
+    color1.changeColor();
     textAlign(RIGHT);
     for (int i=0; i<count; i++) {
       textFont(fontPerWord[i]); 

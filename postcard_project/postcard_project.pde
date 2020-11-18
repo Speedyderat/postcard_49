@@ -13,6 +13,7 @@ float yPos;
 boolean still;
 Background background;
 Words word;
+//Color color1;
 
 void setup() { // assigning values to variables and parameters to classes
   size(600, 800);
@@ -21,11 +22,15 @@ void setup() { // assigning values to variables and parameters to classes
   still = false;
   background = new Background();
   word = new Words(xPos, yPos);
+ // color1 = new Color();
 }
 
 void draw() { // displaying the background and words
   background.display();
+//  color1.changeColor();
   word.display(still);
+ 
+
 }
 
 void mousePressed(){ // method for words to stop shaking
