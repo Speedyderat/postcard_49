@@ -1,0 +1,3 @@
+class Color extends Letters{
+  
+}

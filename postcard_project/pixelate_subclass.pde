@@ -1,0 +1,3 @@
+class Pixelate extends Letters{
+  
+}

@@ -1,0 +1,3 @@
+class Rotate extends Letters{
+  
+}
