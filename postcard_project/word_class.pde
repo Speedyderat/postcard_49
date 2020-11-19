@@ -18,6 +18,7 @@ class Words { // variables for words and the Font array
   Font font;
   Color color1;
   subSize size1;
+  Rotate rotate1;
   float widt;
   float tempX;
    int rando= int(random(0,1.99));
@@ -37,8 +38,11 @@ class Words { // variables for words and the Font array
     textSize(scalor);
     color1 = new Color();
     size1 = new subSize();
+    rotate1 = new Rotate();
     for (int b=0; b<22; b++) {       
       fontPerWord[b]=font.randomFont();
+        color1 = new Color();
+        size1 = new subSize();
     }
   }
 
@@ -56,13 +60,16 @@ class Words { // variables for words and the Font array
         characters[c] = words[i].charAt(c);        
         posX = posX + textWidth(characters[c]);
      
-        switch(rando){
+        switch(2){
          case 0 :
          color1.changeColor(characters[c], posX, posY, still);
          break;
          case 1 :
          size1.changeSize(characters[c], posX, posY, still);
           break;
+         case 2:
+         rotate1.rotateLetters(characters[c], posX, posY, still);
+         break;
         }
      
         
