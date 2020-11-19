@@ -10,7 +10,7 @@ class Letters { // variables for the letters
   }
   
   void display(char letter, float posX, float posY, boolean still){ 
-    float shakespeed = 30;
+    float shakespeed = 5;
       tempX = posX;
       if(still){
         tempX = posX;

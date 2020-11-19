@@ -20,7 +20,7 @@ class Words { // variables for words and the Font array
   subSize size1;
   float widt;
   float tempX;
-   int rando= int(random(0,1));
+   int rando= int(random(0,1.99));
   
 // words constructor
   Words(float tempposX, float tempposY) { 
@@ -35,10 +35,10 @@ class Words { // variables for words and the Font array
     scalor = height/(words.length+1);
     letter = new Letters();
     textSize(scalor);
+    color1 = new Color();
+    size1 = new subSize();
     for (int b=0; b<22; b++) {       
       fontPerWord[b]=font.randomFont();
-        color1 = new Color();
-        size1 = new subSize();
     }
   }
 
