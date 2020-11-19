@@ -23,7 +23,7 @@ class Color extends Letters{
         colorDown = true;
       }
     }
-    fill(r,0,0);
+    fill(0,r,r);
     display(letter, xPos, yPos, still);
     frameCounter++;
       
