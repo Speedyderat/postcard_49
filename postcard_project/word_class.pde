@@ -42,7 +42,7 @@ class Words { // variables for words and the Font array
   void display(boolean still) { // displaying the words and calling letters display
 
 
-    color1.changeColor();
+    
     textAlign(RIGHT);
     for (int i=0; i<count; i++) {    
       textFont(fontPerWord[i]); 
@@ -52,7 +52,14 @@ class Words { // variables for words and the Font array
       for (int c=0; c<words[i].length(); c++){
         characters[c] = words[i].charAt(c);        
         posX = posX + textWidth(characters[c]);
-        letter.display(characters[c], posX, posY, still);
+        int rando= int(random(1,4));
+        switch(rando){
+         case '1' :
+         color1.changeColor(characters[c], posX, posY, still);
+         break;
+        }
+        
+        
     }
     posX = width/2;
     posY += (scalor);
