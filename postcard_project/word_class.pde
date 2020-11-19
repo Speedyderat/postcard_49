@@ -21,7 +21,7 @@ class Words { // variables for words and the Font array
   Rotate rotate1;
   float widt;
   float tempX;
-   int rando= int(random(0,1.99));
+   int rando= int(random(0,2.99));
   
 // words constructor
   Words(float tempposX, float tempposY) { 
@@ -58,9 +58,8 @@ class Words { // variables for words and the Font array
       posX = posX-(widt/2);
       for (int c=0; c<words[i].length(); c++){
         characters[c] = words[i].charAt(c);        
-        posX = posX + textWidth(characters[c]);
-     
-        switch(2){
+        posX = posX + textWidth(characters[c]);     
+        switch(rando){
          case 0 :
          color1.changeColor(characters[c], posX, posY, still);
          break;

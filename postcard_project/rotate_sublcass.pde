@@ -11,14 +11,14 @@ class Rotate extends Letters{
   
   void rotateLetters(char letter, float xPos, float yPos, boolean still){
     xPos = xPos - textWidth(letter)/2;
-    textAlign(CENTER);
+    textAlign(CENTER, CENTER);
     pushMatrix();
     translate(xPos, yPos);
     rotate(rotation);
     display(letter, 0, 0, still);
     popMatrix();
     if(frameCounter%4==0){
-      rotation = rotation + 0.05;
+      rotation = rotation + 0.025;
     }
     if(still){
      rotation = 0; 
