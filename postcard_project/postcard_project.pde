@@ -29,6 +29,9 @@ void draw() { // displaying the background and words
   background.display();
 //  color1.changeColor();
   word.display(still);
+  background.display();
+  background.turnedOn();
+  background.turnOff();
  
 
 }
@@ -38,4 +41,21 @@ void mousePressed(){ // method for words to stop shaking
 }
 void mouseReleased(){ // words shake again
   still = false;
+}
+
+ void keyPressed()
+{
+  if (key=='f')
+  {
+    background.turnOn();
+  }
+  else if (key=='b')
+  {
+    background.setToNormal();
+  } 
+  
+  if (key=='g' )
+  {
+    background.turnItOff();
+  }
 }

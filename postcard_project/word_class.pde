@@ -33,7 +33,7 @@ class Words { // variables for words and the Font array
     words = split(entiretxt, " ");
     count = 0;
     frame = 0;
-    scalor = height/(words.length+1);
+    scalor = height/(words.length+2);
     letter = new Letters();
     textSize(scalor);
     color1 = new Color();

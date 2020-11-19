@@ -52,9 +52,6 @@ class Color extends Letters {
         bDown = true;
       }
     }
-
-
-
     fill(r, g, b);
     display(letter, xPos, yPos, still);
     frameCounter++;
