@@ -1,5 +1,6 @@
 class Rotate extends Letters{
   float rotation;
+  boolean noShake;
   int frameCounter;
 
   
@@ -7,6 +8,7 @@ class Rotate extends Letters{
     super();
     rotation =0;  
     frameCounter = 1;
+    noShake = true;
   }
   
   void rotateLetters(char letter, float xPos, float yPos, boolean still){
@@ -15,7 +17,7 @@ class Rotate extends Letters{
     pushMatrix();
     translate(xPos, yPos);
     rotate(rotation);
-    display(letter, 0, 0, still);
+    display(letter, 0, 0, noShake);
     popMatrix();
     if(frameCounter%4==0){
       rotation = rotation + 0.025;

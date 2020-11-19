@@ -41,8 +41,6 @@ class Words { // variables for words and the Font array
     rotate1 = new Rotate();
     for (int b=0; b<22; b++) {       
       fontPerWord[b]=font.randomFont();
-        color1 = new Color();
-        size1 = new subSize();
     }
   }
 
