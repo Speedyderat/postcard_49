@@ -7,7 +7,9 @@ class Rotate extends Letters{
        
   }
   
-  
+  void rotateLetters(){
+    
+  }
   
  
 }
