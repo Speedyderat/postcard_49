@@ -9,13 +9,13 @@ class Background { //background constructor
 
 
 
-  Background() { // randomizing the background image
+  Background() { // randomizing the background image and loads a background from the data folder
     R12 = int(random(1, 13));
     background[R12] = loadImage("background/background ("+ R12 +").jpg");
     background[R12].loadPixels();
   }
 
-  void display() { // displaying the background 
+  void display() { // display function for the background
     image(background[R12], 0, 0);
     background[R12].resize(600, 800);
   }
