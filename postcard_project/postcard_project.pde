@@ -22,47 +22,32 @@ void setup() { // assigning values to variables and parameters to classes
   xPos = width/2;
   yPos = height/2;
   still = false;
-   flashlight = new Flashlight();
+  flashlight = new Flashlight();
   background = new Background();
   word = new Words(xPos, yPos);
- 
-
-
 }
 
 void draw() { // displaying the background and words
   background.display();
+  flashlight.turnedOn();
   word.display(still);
-  flashlight.displayLight();
-   flashlight.turnedOn();
-     flashlight.turnOff();
-
-  
-  
-   
-
+  flashlight.turnOff();
 }
 
-void mousePressed(){ // method for words to stop shaking
+void mousePressed() { // method for words to stop shaking
   still = true;
 }
-void mouseReleased(){ // words shake again
+void mouseReleased() { // words shake again
   still = false;
 }
 
- void keyPressed()
+void keyPressed()
 {
   if (key=='f')
   {
-  flashlight.turnOn();
-  }
-  else if (key=='b')
+    flashlight.turnOn();
+  } else if (key=='b')
   {
-   flashlight.setToNormal();
-  } 
-  
-  if (key=='g' )
-  {
-  flashlight.turnItOff();
+    flashlight.setToNormal();
   }
 }

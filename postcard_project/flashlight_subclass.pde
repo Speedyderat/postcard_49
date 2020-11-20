@@ -19,26 +19,6 @@ class Flashlight extends Background {
      loadPixels();
   }
 
-  void displayLight() {
-   
-    if (checkFlashlight == false && turnItOff==false)
-      for (x=0; x<width; x++)
-      {
-        for ( y=0; y<height; y++)
-        {
-          pixelLoc = x+y*width;
-          red = red(background[R12].pixels[pixelLoc]);
-          green = green(background[R12].pixels[pixelLoc]);
-          blue = blue(background[R12].pixels[pixelLoc]);
-          distance = dist (width/2, 70, x, 200);
-          factor = map(distance, 0, 200, 3, 0);
-          pixels[pixelLoc] = color(red*factor, green*factor, blue*factor);
-        }
-      }
-    updatePixels();
-  }
-
-
   void turnOn()
   {
     checkFlashlight=true;
@@ -50,11 +30,11 @@ class Flashlight extends Background {
     turnItOff=false;
   }
 
-  void turnItOff()
-  {
-    turnItOff=true;
-    checkFlashlight=false;
-  }
+  //void turnItOff()
+  //{
+  //  turnItOff=true;
+  //  checkFlashlight=false;
+  //}
   void turnedOn()
   {
     loadPixels();
@@ -76,7 +56,6 @@ class Flashlight extends Background {
       }
     }
     updatePixels();
-    word.display(still);
   }
 
   void turnOff()
