@@ -17,7 +17,7 @@ class Flashlight extends Background {
     checkFlashlight=false;
     turnItOff=false;
      loadPixels();
-
+  }
   void turnOn()
   {
     checkFlashlight=true;
