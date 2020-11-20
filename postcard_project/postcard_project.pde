@@ -30,7 +30,10 @@ void setup() { // assigning values to variables and parameters to classes
 void draw() { // displaying the background and words
   background.display();
   flashlight.turnedOn();
+  if(flashlight.checkFlashlight==true)
+  {
   word.display(still);
+  }
   flashlight.turnOff();
 }
 
