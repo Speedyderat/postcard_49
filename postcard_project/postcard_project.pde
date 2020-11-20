@@ -6,6 +6,8 @@
  Dennis Bitoiu     (s2491494)  
  Felipe Ramires    (s2486512) 
  Hans Nielen      (s2336693) 
+ 
+ press the F button to open the flashlight, and b to stop it again, the rest is all randomized, click your mouse to stop the animation.
  */
 
 float xPos, yPos; // declaring classes and arrays
