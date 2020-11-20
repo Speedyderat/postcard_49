@@ -1,15 +1,12 @@
+/* 
+ subclass for the flashlight animation 
+ */
+
 class Flashlight extends Background {
 
-  boolean checkFlashlight = false;
-  int x;
-  int y;
-  int pixelLoc;
-  float red;
-  float green;
-  float blue;
-  float distance;
-  float factor;
-  boolean turnItOff=false;
+  boolean checkFlashlight = false, turnItOff=false;
+  int x, y, pixelLoc;
+  float red, green, blue, distance, factor;
 
 
   Flashlight() {

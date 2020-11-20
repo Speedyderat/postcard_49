@@ -5,8 +5,8 @@
 class Font { // constructor for the font
 
   PFont[] font = new PFont[23];
-
   int j, R22;
+
 
   Font() { //loads one of the fonts from the data folder
     for (int i = 0; i < 23; i = i+1) {

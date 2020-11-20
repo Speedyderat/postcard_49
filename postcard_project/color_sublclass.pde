@@ -1,15 +1,11 @@
-/* subclass that animates 
- the color of the letters 
+/* 
+ subclass that animates the color of the letters 
  */
 
 class Color extends Letters { // variables for the change in color
-  int r;
-  int g;
-  int b;
-  int frameCounter;
-  boolean rDown; // each color changes differently
-  boolean gDown;
-  boolean bDown;
+
+  int r, g, b, frameCounter;
+  boolean rDown, gDown, bDown; // each color changes differently
 
 
   Color() { // Color constructor

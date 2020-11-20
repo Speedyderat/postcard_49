@@ -8,8 +8,7 @@
  Hans Nielen      (s2336693) 
  */
 
-float xPos; // declaring classes and arrays
-float yPos;
+float xPos, yPos; // declaring classes and arrays
 boolean still;
 Flashlight flashlight;
 Background background;

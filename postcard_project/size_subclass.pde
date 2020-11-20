@@ -1,5 +1,5 @@
-/* subclass that animates 
- the size of the letters 
+/* 
+ subclass that animates the size of the letters 
  */
 
 class subSize extends Letters { // variables for the letter sizing
@@ -7,6 +7,7 @@ class subSize extends Letters { // variables for the letter sizing
   int frameCounter;
   boolean sizeDown;
   float scaler;
+
 
   subSize() { // Size constructor
     super(); //call information form superclass Letters

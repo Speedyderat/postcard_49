@@ -1,11 +1,11 @@
-
 /* 
  class for the letters
  */
 
 class Letters { // variables for the letters
-  float tempX;
-  float shakespeed = 5;
+
+  float tempX, shakespeed = 5;
+
 
   Letters() { // constrcutor for Letters
   }

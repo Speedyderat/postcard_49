@@ -1,17 +1,14 @@
-
 /* 
  class for the words
  */
 
 class Words { // variables for words and the Font array
+
+  int count, frame, rando = int(random(0, 2.99));
+  float posX, posY, scalor, widt, tempX;
   String entiretxt;
   String[] lines; 
-  int count;
-  int frame;
   String[] words;
-  float posX;
-  float posY;
-  float scalor;
   PFont[] fontPerWord = new PFont[23];
   char[] characters = new char[30];
   Letters letter;
@@ -19,12 +16,9 @@ class Words { // variables for words and the Font array
   Color color1;
   subSize size1;
   Rotate rotate1;
-  float widt;
-  float tempX;
-  int rando= int(random(0, 2.99));
 
-  // words constructor
-  Words(float tempposX, float tempposY) { 
+
+  Words(float tempposX, float tempposY) { // words constructor
     font = new Font();
     posX = tempX = tempposX;
     posY = tempposY;

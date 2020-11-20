@@ -1,4 +1,9 @@
+/* 
+ subclass that animates the rotation of the letters 
+ */
+
 class Rotate extends Letters {
+
   float rotation;  //set variables for rotation
   boolean noShake;
   int frameCounter;
