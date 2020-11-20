@@ -17,7 +17,7 @@ class Letters { // variables for the letters
       }else{
         tempX = tempX + random(-shakespeed,shakespeed);
       }   
-      text(letter, tempX, posY);
+      text(letter, tempX, posY);  //draw letter
     
   }  
 }

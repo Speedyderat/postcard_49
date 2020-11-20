@@ -18,9 +18,6 @@ class Flashlight extends Background {
     turnItOff=false;
      loadPixels();
 
-  }
-
-
   void turnOn()
   {
     checkFlashlight=true;
@@ -32,6 +29,11 @@ class Flashlight extends Background {
     turnItOff=false;
   }
 
+  void turnItOff()
+  {
+    turnItOff=true;
+    checkFlashlight=false;
+  }
   void turnedOn()
   {
     loadPixels();
