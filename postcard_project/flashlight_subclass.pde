@@ -83,7 +83,7 @@ class Flashlight extends Background {
   {
     loadPixels();
     background[R12].loadPixels();
-    if (turnItOff==true &&  checkFlashlight==false)
+    if (turnItOff==false &&  checkFlashlight==false)
     {
       image(background[R12], 0, 0);
       background[R12].resize(600, 800);

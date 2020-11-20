@@ -27,6 +27,7 @@ void setup() { // assigning values to variables and parameters to classes
   word = new Words(xPos, yPos);
  
 
+
 }
 
 void draw() { // displaying the background and words
@@ -34,7 +35,8 @@ void draw() { // displaying the background and words
   word.display(still);
   flashlight.displayLight();
    flashlight.turnedOn();
-  flashlight.turnOff();
+     flashlight.turnOff();
+
   
   
    
