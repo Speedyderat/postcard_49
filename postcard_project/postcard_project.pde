@@ -11,28 +11,33 @@
 float xPos; // declaring classes and arrays
 float yPos;
 boolean still;
+Flashlight flashlight;
 Background background;
 Words word;
-//Color color1;
+
+
 
 void setup() { // assigning values to variables and parameters to classes
   size(600, 800);
   xPos = width/2;
   yPos = height/2;
   still = false;
+   flashlight = new Flashlight();
   background = new Background();
   word = new Words(xPos, yPos);
- // color1 = new Color();
+ 
+
 }
 
 void draw() { // displaying the background and words
   background.display();
-//  color1.changeColor();
   word.display(still);
-  background.display();
-  background.turnedOn();
-  background.turnOff();
- 
+  flashlight.displayLight();
+   flashlight.turnedOn();
+  flashlight.turnOff();
+  
+  
+   
 
 }
 
@@ -47,15 +52,15 @@ void mouseReleased(){ // words shake again
 {
   if (key=='f')
   {
-    background.turnOn();
+  flashlight.turnOn();
   }
   else if (key=='b')
   {
-    background.setToNormal();
+   flashlight.setToNormal();
   } 
   
   if (key=='g' )
   {
-    background.turnItOff();
+  flashlight.turnItOff();
   }
 }
