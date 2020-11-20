@@ -46,8 +46,6 @@ class Words { // variables for words and the Font array
 
   void display(boolean still) { // displaying the words and calling letters display
 
-
-    
     textAlign(RIGHT);
     for (int i=0; i<count; i++) {    
       textFont(fontPerWord[i]); 
