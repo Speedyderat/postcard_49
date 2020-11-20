@@ -5,12 +5,12 @@
 
 class Letters { // variables for the letters
   float tempX;
+  float shakespeed = 5;
   
   Letters(){ // constrcutor for Letters
   }
   
   void display(char letter, float posX, float posY, boolean still){ 
-    float shakespeed = 5;
       tempX = posX;
       if(still){
         tempX = posX;
