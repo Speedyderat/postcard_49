@@ -1,6 +1,6 @@
 /* subclass that animates 
-the color of the letters 
-*/
+ the color of the letters 
+ */
 
 class Color extends Letters { // variables for the change in color
   int r;
@@ -59,6 +59,5 @@ class Color extends Letters { // variables for the change in color
     fill(r, g, b);
     display(letter, xPos, yPos, still);
     frameCounter++;
-  
   }
 }

@@ -30,9 +30,9 @@ void setup() { // assigning values to variables and parameters to classes
 void draw() { // displaying the background and words
   background.display();
   flashlight.turnedOn();
-  if(flashlight.checkFlashlight==true)
+  if (flashlight.checkFlashlight==true)
   {
-  word.display(still);
+    word.display(still);
   }
   flashlight.turnOff();
 }
@@ -51,11 +51,11 @@ void keyPressed()
     flashlight.turnOn();
   } else if (key=='b')
   {
-   flashlight.setToNormal();
+    flashlight.setToNormal();
   } 
-  
+
   if (key=='g' )
   {
-  flashlight.turnItOff();
+    flashlight.turnItOff();
   }
 }

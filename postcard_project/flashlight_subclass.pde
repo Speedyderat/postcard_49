@@ -16,7 +16,7 @@ class Flashlight extends Background {
     super();
     checkFlashlight=false;
     turnItOff=false;
-     loadPixels();
+    loadPixels();
   }
   void turnOn()
   {
@@ -75,10 +75,10 @@ class Flashlight extends Background {
           blue = blue(background[R12].pixels[pixelLoc]);         //Same comments as the previous ones.
           distance = dist (mouseX, mouseY, x, 200);
           factor = map(distance, 0, 200, 0, 0);
-          pixels[pixelLoc] = color(red*factor, green*factor, blue*factor);   //Since the distance gets mapped between 0 and 0, the color of the pixels will be black. 
+          pixels[pixelLoc] = color(red*factor, green*factor, blue*factor);   //Since the distance gets mapped between 0 and 0, the color of the pixels will be black.
         }
-      }                                                                     //For instance, the red value of a pixel gets multiplied by 0, turning the red value  
-     }                                                                      //of the pixel to 0
+      }                                                                     //For instance, the red value of a pixel gets multiplied by 0, turning the red value
+    }                                                                      //of the pixel to 0
     updatePixels();
   }
 }
